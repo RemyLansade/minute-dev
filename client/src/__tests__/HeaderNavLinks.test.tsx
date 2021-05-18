@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import HeaderNavLinks from '../components/HeaderNavLinks';
+import HeaderNavLinks from '../components/header/HeaderNavLinks';
 
 describe('<HeaderNavLinks />', () => {
   it('render HeaderNavLinks components', () => {

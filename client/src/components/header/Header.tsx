@@ -1,5 +1,5 @@
 import HeaderNavLinks from './HeaderNavLinks';
-import DropdownConnection from './uiTools/DropdownConnection';
+import DropdownConnection from '../uiTools/DropdownConnection';
 import './Header.css';
 
 const Header = () => {

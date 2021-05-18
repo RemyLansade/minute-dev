@@ -1,6 +1,6 @@
 import { Route, Switch, Redirect } from 'react-router-dom';
 
-import Header from '../components/Header';
+import Header from '../components/header/Header';
 import { About, Articles, Contact, Forum } from '../template/Pages';
 import './App.css';
 

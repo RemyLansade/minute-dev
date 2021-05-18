@@ -7,6 +7,4 @@ describe('<App />', () => {
   it('render App component', () => {
     render(<Router><App /></Router>);
   });
-
-  it('Take snapshot')
 });
