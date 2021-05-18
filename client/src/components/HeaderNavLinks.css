@@ -10,7 +10,7 @@
   display: block;
   position: relative;
   transition: 0.3s;
-  opacity: 80%;
+  opacity: 70%;
 }
 
 .nav-link.active-link {

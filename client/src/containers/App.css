@@ -1,3 +1,7 @@
+h2.container {
+  margin-bottom: 17px;
+}
+
 a {
   color: #5477AD;
   font-size: 24px;
@@ -10,4 +14,9 @@ a {
 
 .main-content {
   margin-top: 180px;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
 }
