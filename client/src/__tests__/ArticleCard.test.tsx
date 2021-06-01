@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import ArticleCard from '../components/ArticleCard';
+import ArticleCard from '../components/articles/ArticleCard';
 
 describe('<ArticleCard />', () => {
   it('correctly rendered', () => {
