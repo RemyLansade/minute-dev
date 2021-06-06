@@ -1,9 +1,9 @@
-import { render } from '@testing-library/react';
+import { renderWithRouterAndTheme } from '../helpers/testHelpers'
 import ArticleCard from '../components/articles/ArticleCard';
 
 describe('<ArticleCard />', () => {
   it('correctly rendered', () => {
-    const { getByTestId } = render(<ArticleCard />);
+    const { getByTestId } = renderWithRouterAndTheme(<ArticleCard />);
     expect(getByTestId('article-card')).toBeInTheDocument();
   });
 });

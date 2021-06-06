@@ -1,20 +1,19 @@
-import { render } from '@testing-library/react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { renderWithRouterAndTheme } from '../helpers/testHelpers';
 import HeaderNavLinks from '../components/header/HeaderNavLinks';
 
 describe('<HeaderNavLinks />', () => {
   it('render HeaderNavLinks components', () => {
-    const links = render(<Router><HeaderNavLinks /></Router>);    
+    const links = renderWithRouterAndTheme(<HeaderNavLinks />);
     expect(links).toBeTruthy();
   });
 
   it('contain links container', () => {
-    const { getByTestId } = render(<Router><HeaderNavLinks /></Router>);
+    const { getByTestId } = renderWithRouterAndTheme(<HeaderNavLinks />);
     expect(getByTestId('nav-links')).toBeInTheDocument();
   });
 
   it('contain all links', () => {
-    const { getByText } = render(<Router><HeaderNavLinks /></Router>);
+    const { getByText } = renderWithRouterAndTheme(<HeaderNavLinks />);
     expect(getByText('Articles')).toBeInTheDocument();
     expect(getByText('Forum')).toBeInTheDocument();
     expect(getByText('A propos')).toBeInTheDocument();

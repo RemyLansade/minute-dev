@@ -1,9 +1,9 @@
-import { render } from '@testing-library/react';
+import { renderWithRouterAndTheme } from '../helpers/testHelpers';
 import Header from '../components/header/Header';
-import { BrowserRouter as Router } from 'react-router-dom';
 
 describe('<Header />' , () => {
-  it('render Header component', async () => {
-    await render(<Router><Header /></Router>);
+  it('render Header component', () => {
+    const header = renderWithRouterAndTheme(<Header />);
+    expect(header).toBeTruthy();
   });
 })
