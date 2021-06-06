@@ -1,4 +1,4 @@
-import styled, { DefaultTheme } from "styled-components";
+import styled from "styled-components";
 
 import HeaderSearch from "../uiTools/HeaderSearch";
 import DropdownConnection from "../uiTools/DropdownConnection";
